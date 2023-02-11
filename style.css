@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #333;
+}
+
+.container {
+  margin: 40px auto;
+  width: 450px;
+}
+
+.form {
+  background-color: #222;
+  height: 80px;
+  width: 100%;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+
+.container .form input {
+  width: 80%;
+  padding: 10px;
+  background-color: #eee;
+  border: none;
+  border-bottom: 2px solid #333;
+  border-radius: 5px;
+}
+
+.container .form .add-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #664;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container .my-work {
+  width: 100%;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container .my-work .work {
+  color: white;
+  width: 100%;
+  background-color: #363;
+  margin-bottom: 15px;
+  padding: 10px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.container .my-work .work:hover {
+  background-color: #aaa;
+  color: black;
+}
+
+.container .my-work .work:last-child {
+  margin-bottom: auto;
+}
+
+.container .my-work .work .delete {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: #422;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.container .my-work .done {
+  background-color: #ccc;
+  color: black;
+  text-decoration: line-through;
+}
+.my-work:empty {
+  display: none;
+}
